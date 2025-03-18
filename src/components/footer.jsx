@@ -1,56 +1,57 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 
-const footer = () => {
+const Footer = () => {
   return (
     <footer className="bg-gray-100 py-8 md:py-12">
       <div className="max-w-5xl mx-auto px-4 md:px-8">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 justify-center">
           <div>
-            <h3 className="text-lg font-semibold mb-4">Ahmeraki</h3>
-            <p className="text-gray-600 mb-4">
+            <h3 className="text-lg font-semibold mb-4 text-gray-600">Ahmeraki</h3>
+            <p className="text-gray-600 text-left font-light mb-4">
               Luxury coffee experience tailored for connoisseurs and
               enthusiasts seeking the finest brews and exclusive community.
             </p>
           </div>
           <div>
-            <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
+            <h3 className="text-lg font-semibold mb-4 text-gray-600">Quick Links</h3>
             <ul className="space-y-2">
               <li>
-                <a href="#" className="text-gray-600 hover:text-amber-700">
+                <Link to="/" className="text-gray-600 font-light hover:text-amber-700">
                   Home
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-gray-600 hover:text-amber-700">
+                <Link to="/story" className="text-gray-600 font-light hover:text-amber-700">
                   Our Story
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-gray-600 hover:text-amber-700">
+                <Link to="/products" className="text-gray-600 font-light hover:text-amber-700">
                   Product Collection
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-gray-600 hover:text-amber-700">
+                <Link to="/menu" className="text-gray-600 font-light hover:text-amber-700">
                   Menu
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-gray-600 hover:text-amber-700">
+                <Link to="/join" className="text-gray-600 font-light hover:text-amber-700">
                   Join Our Family
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
           <div>
-            <h3 className="text-lg font-semibold mb-4">Contact Us</h3>
-            <p className="text-gray-600 mb-2">
-            152 Constant Spring Rd, Kingston
+            <h3 className="text-lg font-semibold mb-4 text-gray-600">Contact Us</h3>
+            <p className="text-gray-600 font-light mb-2">
+              152 Constant Spring Rd, Kingston
             </p>
-            <p className="text-gray-600 mb-2">contact@ahmeraki.com</p>
-            <p className="text-gray-600 mb-4">+1 (876) 671-4244</p>
+            <p className="text-gray-600 font-light mb-2">contact@ahmeraki.com</p>
+            <p className="text-gray-600 font-light mb-4">+1 (876) 223-0745</p>
             <div className="flex space-x-4">
-              <a href="https://www.instagram.com/ahmerakicafe/?hl=en" className="text-gray-600 hover:text-amber-700">
+              <a href="https://www.instagram.com/ahmerakicafe/" className="text-gray-600 hover:text-amber-700">
                 <span className="sr-only">Facebook</span>
                 <svg
                   className="h-6 w-6"
@@ -65,7 +66,7 @@ const footer = () => {
                   />
                 </svg>
               </a>
-              <a href="https://www.instagram.com/ahmerakicafe/?hl=en" className="text-gray-600 hover:text-amber-700">
+              <a href="https://www.instagram.com/ahmerakicafe/" className="text-gray-600 hover:text-amber-700">
                 <span className="sr-only">Instagram</span>
                 <svg
                   className="h-6 w-6"
@@ -80,7 +81,7 @@ const footer = () => {
                   />
                 </svg>
               </a>
-              <a href="https://www.instagram.com/ahmerakicafe/?hl=en" className="text-gray-600 hover:text-amber-700">
+              <a href="https://www.instagram.com/ahmerakicafe/" className="text-gray-600 hover:text-amber-700">
                 <span className="sr-only">Twitter</span>
                 <svg
                   className="h-6 w-6"
@@ -104,4 +105,4 @@ const footer = () => {
   );
 };
 
-export default footer;
+export default Footer;
