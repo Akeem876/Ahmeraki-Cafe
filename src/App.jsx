@@ -1,13 +1,15 @@
 import React, { useState } from "react";
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Footer from "./components/footer"; // Import the Footer component
 
 // Reusable components
 const Logo = () => (
-  <div className="flex items-center justify-center py-4 w-full">
-  <span className="text-green-800 text-2xl md:text-3xl font-semibold tracking-wider">
-    Ahmeraki Cafe
-  </span>
-</div>
+    <div className="flex items-center justify-center py-4 w-full">
+      <Link to="/"><span className="text-green-800 text-2xl md:text-3xl font-semibold tracking-wider">
+        Ahmeraki Cafe
+      </span>
+      </Link>
+    </div>
 );
 
 const MobileMenu = ({ isOpen, toggleMenu }) => (
